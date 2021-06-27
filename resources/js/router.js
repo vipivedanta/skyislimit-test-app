@@ -7,6 +7,7 @@ Vue.use(VueRouter)
 import Login from './views/user/Login.vue'
 import Register from './views/user/Register.vue'
 import Listing from './views/list/Listing.vue'
+import ToDo from './views/todo/ToDo.vue'
 
 const router = new VueRouter({
     mode: 'history',
@@ -25,6 +26,11 @@ const router = new VueRouter({
         	path: '/',
         	name: 'listing',
         	component: Listing
+        },
+        {
+            path: '/app/to-do',
+            name: 'todo',
+            component: ToDo
         }
     ],
 });

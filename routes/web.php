@@ -15,4 +15,17 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+Route::get('/app/to-do','SpaController@index')->middleware('auth');
+Route::get('/logout',function(){
+	Auth::logout();
+	return redirect('/');
+}); // this should be a post event instead of a Link
+
+Route::get('/login-check', function(){
+	return response()->json([
+		'status' => true,
+		'logged' => Auth::check()
+	]);
+});
+
 Route::get('/{any}', 'SpaController@index')->where('any', '.*');
