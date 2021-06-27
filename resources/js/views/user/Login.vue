@@ -1,3 +1,3 @@
 <template>
-	<p>Login Now</p>
+	<p class="btn btn-sm btn-success">Login Now</p>
 </template>
