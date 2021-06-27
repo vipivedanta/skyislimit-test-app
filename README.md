@@ -6,6 +6,7 @@
 4. I used mysql in local, Heroku mysql plugins requires some time to setup ( including credit card information I think)
 5. User validation - can be done with RegisterController@validator
 6. Profile page
+7. Hiding/showing logout menu on top navbar
 
 #what could have been improved
 
